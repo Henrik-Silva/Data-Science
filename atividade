@@ -1,0 +1,32 @@
+01-
+notas = [7, 8, 9, 6, 8, 9, 7, 6, 5, 7, 8, 9, 6, 8, 9, 5, 7]
+
+print("Os 12 primeiros registros:")
+print(notas[:12])
+
+print("\nOs 6 últimos registros:")
+print(notas[-6:])
+
+print("\nTamanho da massa de dados:")
+print(len(notas))
+
+
+02-
+filmes = [
+    {"ID": 30, "nome": "Filme A", "nota": 2.5},
+    {"ID": 31, "nome": "Filme B", "nota": 3.8},
+    {"ID": 32, "nome": "Filme C", "nota": 4.2},
+    {"ID": 33, "nome": "Filme D", "nota": 2.0},
+    {"ID": 34, "nome": "Filme E", "nota": 3.5}
+]
+
+# Procura pelo filme com ID=32
+for filme in filmes:
+    if filme["ID"] == 32:
+        if filme["nota"] > 3:
+            print(f"Nome: {filme['nome']}")
+            print("Este é um filme bom.")
+        else:
+            print(f"Nome: {filme['nome']}")
+            print("Este filme não é considerado bom.")
+        break
